@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+ 
 
     
 }
@@ -9,28 +10,81 @@ body{
     background-image: url("../img/bg_001.jpg");
     
 }
+/* navigation */
+ul li{
+    display: inline-block;
+    margin-right: 2rem;
+    
+}
+ul li a{
+    color: white;
+}
+
+
+nav{
+    
+    position: absolute;
+    top: 2vw;
+    right: 14vw;
+    
+
+
+}
+/* logo */
+.img1{
+    width: 25vw;
+    height: 10vh;
+    position: relative;
+    top: 2vw;
+    min-width: 6rem;
+    max-width: 15rem;
+    left: 15vw;
+    margin-bottom: 3rem;
+    
+    
+}
+
+
+/* Body and main content */
+
+.sec{
+    
+    width: 50vw;
+    top: 2rem;
+    position: absolute;
+    top: 22vh;
+    
+    height: 50%;
+    left: 10vw;
+    float: left;
+    
+}
+
 h1{
     font-family:'Times New Roman', Times, serif;
-    font-size: 3rem;
-    text-align: left;
-    padding-left: 12rem;
-    margin-left: 12rem;
-    width: 20vw;
-height: 20vh   ;
+    font-size: 3vw;
+    text-align: center;
+    width: 100%;
+    height: 8rem;
+    color:white;
+    
 }
 p{
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 2vw;
     text-align: left;
-    padding-left: 12rem;
-    margin-left: 12rem;
-    width: 28vw;
-    height:28vh;
+    width: 100%;
+    height:10vh;
+    color:white;
 }
-form{
-    padding-left: 12rem;
-    margin-left: 12rem;
+
+/* Bottons  */
+
+input{
+    padding: 0;
+    margin:3rem 4.5rem;
 }
+
 
 .input1{
     background-color: rgb(8, 238, 65);
@@ -53,27 +107,12 @@ form{
 }
 
 
-ul li{
-    display: inline-block;
-    margin-right: 2rem;
-    color:white;
-    
-}
-nav{
-    text-align: right;
-    margin-right: 6rem;
-    padding-right: 6rem;
 
-}
-.img1{
-    width: 12vw;
-    height: 12vh;
-    position: absolute;
-    margin-left: 12rem;
-    padding-left: 12rem;
-    top: 0%;
-    
-}
+
+
+/* for the text on the left */
+
+
 #img2{
     
     right: 20%;
@@ -84,25 +123,29 @@ nav{
  .img4{
     
      height: 66vh;
-     width: 20vw;
+     width: 17vw;
      position: absolute;
-    
+ 
  }
+ .img1:hover{
+background-color: crimson;
+ }
+ 
  #img3{
 
     
     top: 15%;
     right:15%;
     z-index: -1;
+  
  }
- .sect{
-     height: 50%;
-     width: 50%;
-     border-top: 1rem solid black;
- }
+
+ 
+ 
  .sect1{
      height: 50%;
      width: 50%;
-     border-bottom: 1rem solid black;
+     float: left;
+     
  }
      
