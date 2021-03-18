@@ -5,19 +5,40 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>mobile app</title>
+    <meta name="viewport" content="device-width, initial-scale=1.0"/>
 
 </head>
 
 <body>
+    <section>
+        <div class="hamburger">
+            <div class="hamburger-div hamburger-div-first-line" ></div>
+            <div class="hamburger-div hamburger-div-second-line"  ></div>
+            <div class="hamburger-div hamburger-div-third-line" ></div>
+        </div>
+    
+        
+        
+    
+        <div class="drop-menu">
+            <ul>
+                <li class="drop-menu-list"><a class="drop-menu-word"href="#">Home</a></li></br>
+                <li class="drop-menu-list"><a class="drop-menu-word" href="#">About</a></li></br>
+                <li class="drop-menu-list"><a class="drop-menu-word" href="#">Services</a></li>
+            </ul>
+            </div>
+                
+    </section>
+
 
     <nav>
         <ul>
             <li><a href="#">PRODUCTS</a><li>
-            <li><a href="#">PRICES</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">TEAM</a></li>
-            <li><a href="#">LOGIN</a></li>
-            <li><a href="#">SIGN UP</a></li>
+            <li ><a href="#">PRICES</a></li>
+            <li ><a href="#">BLOG</a></li>
+            <li ><a href="#">TEAM</a></li>
+            <li ><a href="#">LOGIN</a></li>
+            <li ><a href="#">SIGN UP</a></li>
         </ul>
     </nav>
 
@@ -25,7 +46,7 @@
     
     <section class="sec">
 
-        <h1>Make Your Start Up Web Wit Our Template,</h1>
+        <h1>Make Your Start Up Web With Our Template,</h1>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ipsa perferendis. Maxime, dolor ea. Impedit corrupti reprehenderit quibusdam ab voluptate ipsum, odit repudiandae assumenda rem!</p>
         
@@ -51,6 +72,25 @@
         <div><img class="img4" id="img3" src="./img/phone_001.png" alt="phone1" />
         </div>
     </section>
+    <script>
+        let clicked = false;
+        document.querySelector(".hamburger").addEventListener("click",()=>
+        {
+            clicked = !clicked;
+            if(clicked){
+                document.querySelector(".drop-menu").style.cssText  = 
+                "display: block; position: absolute;top: 3vh;left:0;z-index: 1;"}
+else{
+    document.querySelector('.drop-menu').style.cssText = "display: none;"
+            
+}
+        });
+
+
+
+
+
+    </script>
 
 </body>
 
