@@ -1,0 +1,47 @@
+header{
+width: $header-width;
+height: $header-height;
+}
+.hamburge{
+    display: flex;
+    justify-content: space-evenly;
+    align-content:flex-start;
+    flex-direction: column;
+    width: $hamburger-width;
+    height:$hamburger-height;    
+}
+.hamburger-div{
+    width: $hamburger-div-width;
+    border: $hamburger-div-border;
+}
+.drop-menu{
+    width: $drop-menu-width;
+    height: $drop-menu-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.drop-menu li{
+    width: $drop-menu-li-width;
+    height: $drop-menu-li-height;
+    list-style: none;
+    right:  4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color:$drop-menu-li-background-color;
+    top: 0;
+
+}
+
+.drop-menu-word{
+    text-decoration: none;
+    color:$drop-menu-word-color;
+    font-size: $drop-menu-word-font-size;
+
+
+}
