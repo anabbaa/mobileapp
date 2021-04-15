@@ -8,10 +8,9 @@
     left: 22vw;
     margin-bottom: $logo-margin;
 }
-
 .img4{
-    height: 39vh;
-    width: 10vw;
+    height: $bothimg-height;
+    width: $bothimg-width;
 }
 #img2{      
     right: 12%;
@@ -24,9 +23,7 @@ position: absolute;
     top:  30%;
     left: 73%;
  }
- 
  .sect1{
      height: 50%;
      width: 50%;
-     
 }
