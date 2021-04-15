@@ -31,7 +31,7 @@ header {
 }
 
 .hamburger-div {
-  width: 4vh;
+  width: 7vh;
   border: 0.2rem black solid;
 }
 
@@ -57,25 +57,27 @@ header {
 }
 .drop-menu {
   width: 8vw;
-  height: 44vh;
+  height: 77vh;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
+  display: none;
 }
 
 .drop-menu li {
   width: 100%;
   height: 30%;
   list-style: none;
-  right: 4vw;
+  right: 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
   background-color: yellow;
-  top: 0;
+  margin: 2vh 0 2vh;
 }
 
 .drop-menu-word {
@@ -101,21 +103,28 @@ header {
   transform: rotate(-0.35turn);
 }
 
-nav {
-  text-align: right;
-  width: 80%;
+.nav {
+  width: 90%;
+  position: relative;
+  left: 55vh;
+  top: -8vh;
+}
+
+.nav-ul {
+  display: flex;
+  list-style: none;
 }
 
 .nav-li {
   display: inline;
   margin: 2rem;
   list-style: none;
-  text-align: right;
 }
 
-.nav a {
+.nav-a {
   color: white;
   text-decoration: none;
+  font-size: 1.3rem;
 }
 
 .img1 {
