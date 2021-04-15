@@ -8,12 +8,20 @@
   font-size: 16px;
 }
 
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/bg_001.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 header {
   width: 100vh;
   height: 4vw;
 }
 
-.hamburge {
+.hamburger {
   display: flex;
   justify-content: space-evenly;
   align-content: flex-start;
@@ -27,6 +35,26 @@ header {
   border: 0.2rem black solid;
 }
 
+.drop-menu-father {
+  animation-name: drop-m;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@keyframes drop-m {
+  0% {
+    opacity: 0.5;
+    transition: all 500ms ease-in;
+  }
+  50% {
+    opacity: 0.3;
+    transition: all 700ms ease-in;
+  }
+  100% {
+    opacity: 0.1;
+    transition: all 900ms ease-in;
+  }
+}
 .drop-menu {
   width: 8vw;
   height: 44vh;
@@ -54,6 +82,124 @@ header {
   text-decoration: none;
   color: black;
   font-size: 1rem;
+}
+
+.drop-menu-word:hover {
+  background-color: tomato;
+}
+
+.hamburger:hover > .hamburger-div-first-line {
+  transform: rotate(0.35turn);
+  position: absolute;
+}
+
+.hamburger:hover > .hamburger-div-second-line {
+  display: none;
+}
+
+.hamburger:hover > .hamburger-div-third-line {
+  transform: rotate(-0.35turn);
+}
+
+nav {
+  text-align: right;
+  width: 80%;
+}
+
+.nav-li {
+  display: inline;
+  margin: 2rem;
+  list-style: none;
+  text-align: right;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.img1 {
+  width: 16vw;
+  height: 12vh;
+  position: relative;
+  top: 2vw;
+  min-width: 2rem;
+  max-width: 15rem;
+  left: 22vw;
+  margin-bottom: 3rem;
+}
+
+.img4 {
+  height: 39vh;
+  width: 10vw;
+}
+
+#img2 {
+  right: 12%;
+  top: 20%;
+  position: absolute;
+  margin-top: 2vh;
+}
+
+#img3 {
+  position: absolute;
+  top: 30%;
+  left: 73%;
+}
+
+.sect1 {
+  height: 50%;
+  width: 50%;
+}
+
+.sec {
+  width: 50vw;
+  left: 15%;
+  position: relative;
+  height: 10vh;
+  top: 8vh;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3vw;
+  text-align: center;
+  width: 100%;
+  height: 8vh;
+  color: white;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+  text-align: center;
+  width: 100%;
+  height: 10vh;
+  color: white;
+  margin-top: 4vh;
+}
+
+/* Bottons  */
+input {
+  margin: 1rem;
+  position: relative;
+  top: 8vh;
+}
+
+.input1 {
+  background-color: #08ee41;
+  width: 22vw;
+  height: 4vh;
+  border: none;
+  outline: none;
+}
+
+.input2 {
+  background-color: #00aeff;
+  width: 22vw;
+  height: 4vh;
+  border: none;
+  outline: none;
 }
 
 /*# sourceMappingURL=main.css.map */
